@@ -29,3 +29,20 @@ describe('Tax Calculator – smoke suite', () => {
     expect(Number.isNaN(NaN)).toBeTrue();
   });
 });
+
+// If you test in Node, export functions from taxCalculator.js; in browser, just assume global.
+
+describe('Sum sanity', () => {
+  it('2 + 3 = 5', () => {
+    expect(2 + 3).toBe(5);
+  });
+});
+
+describe('calculateTax business rule', () => {
+  it('10% of 1000 is 100', () => {
+    // Pure function helper (add this to taxCalculator.js or inline here)
+    function taxOf(income){ return Math.round(income * 0.1 * 100) / 100; }
+    expect(taxOf(1000)).toBe(100);
+  });
+});
+

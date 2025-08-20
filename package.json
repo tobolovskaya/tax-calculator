@@ -2,9 +2,17 @@
   "name": "tax-calculator",
   "version": "1.0.0",
   "scripts": {
+    "build": "webpack",
+    "serve": "npx http-server dist -p 8081",
     "test": "jasmine --config=jasmine.json"
   },
   "devDependencies": {
-    "jasmine": "^5.1.0"
+    "copy-webpack-plugin": "^13.0.1",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.4",
+    "jasmine": "^5.1.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
   }
 }
