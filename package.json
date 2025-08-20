@@ -2,7 +2,7 @@
   "name": "tax-calculator",
   "version": "1.0.0",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine --config=jasmine.json"
   },
   "devDependencies": {
     "jasmine": "^5.1.0"
